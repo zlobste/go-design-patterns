@@ -23,12 +23,12 @@ All object needed to implement the decorator pattern should implement same inter
 functionality of `GetPrice` method we'll create an interface like this:
 
 ```
-type IPizza interface {
+type IComponent interface {
     GetPrice() int
 }
 ```
 
-And because of we are treating with a legacy recipe, all new ingredient must implement a `IPizza` interface.
+And because of we are treating with a legacy recipe, all new ingredient must implement a `IComponent` interface.
 
 ```
 type Pizza struct{}

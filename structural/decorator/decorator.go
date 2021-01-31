@@ -6,7 +6,7 @@ const (
 	PRICE_FOR_CHEESE = 10
 )
 
-type IPizza interface {
+type IComponent interface {
 	GetPrice() int
 }
 
