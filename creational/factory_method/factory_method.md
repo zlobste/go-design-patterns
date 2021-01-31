@@ -10,6 +10,14 @@ Allows the sub-classes to choose the type of objects to create at runtime It pro
 family of objects with minor changes in application code. Promotes the loose-coupling by eliminating the need to bind
 application-specific structs into the code.
 
+### Pros and Cons
+
+| :white_check_mark: Pros                                                 | :x: Cons                                                                                                                                                                                                                        |
+| ----------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| You avoid tight coupling between the creator and the concrete products. | The code may become more complicated since you need to introduce a lot of new subclasses to implement the pattern. The best case scenario is when you’re introducing the pattern into an existing hierarchy of creator classes. |
+| Single Responsibility Principle. You can move the product creation code into one place in the program, making the code easier to support.
+| Open/Closed Principle. You can introduce new types of products into the program without breaking existing client code.
+
 ### Implementation
 
 The factory method defines the interface for creating objects but allows subclasses to decide which classes to create.
